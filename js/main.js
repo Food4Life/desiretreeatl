@@ -1,5 +1,11 @@
 (function($) {
   "use strict"
+	
+  // Scrolling causes change of background colour of nav-bar
+  $(document).scroll(function () {
+	  var $nav = $(".navbar-fixed-top");
+	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
 
   // Mobile Nav button toggle
   $('.navbar-toggle-btn').on('click', function() {
