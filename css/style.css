@@ -249,6 +249,16 @@ textarea.input {
   z-index: 910;
 }
 
+/* Scrolling changes nav-bar menu */
+.navbar-fixed-top.scrolled {
+  background-color: #83ba09 !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar-fixed-top.scrolled .nav-link {
+  color:#FFF;
+}
+
 /*----------------------------*\
 	menu
 \*----------------------------*/
